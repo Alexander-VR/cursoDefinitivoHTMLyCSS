@@ -30,49 +30,25 @@
         </section>
         <section>
             <form action="">
-                <label for="añadirCosas">
-                    <span>Añade algo querido amigo</span>
-                    <input type="text" name="" id="añadirCosas" placeholder="Here">
-                </label>
-                <label for="fechas">
-                    <span>Ingresa fecha</span>
-                    <input type="date" name="" id="fechas">
-                </label>
-                <label for="horas">
-                    <span>Horas</span>
-                    <input type="time" name="" id="horas">
-                </label>
-            </form>
-        </section> 
-        <section>
-            <form action="">
-                <label for="hora">
-                    <span>Hora</span>
-                    <input type="time" name="hora" id="hora" >
-                </label>
-                <label for="dia">
-                    <span>Dia</span>
-                    <input type="date" name="dia" id="dia" >
-                </label>
-                <label for="semana">
-                    <span>Semana</span>
-                    <input type="week" name="semana" id="semana" >
-                </label>
-                <label for="mes">
-                    <span>Mes</span>
-                    <input type="month" name="mes" id="mes" >
-                </label>
-                <input type="submit">
-            </form>
-        </section>
-        <!--Forma Rapida-->
-        <section>
-            <form action="">
-                <label for="calendario">
-                    <span>calendarioxd</span>
-                    <input type="datetime-local" name="calendario" id="calendario">
-                </label>
-                <input type="submit">
+                <form action="">
+                    <label for="name">
+                        <span>Nombre</span>
+                        <input type="text" name="name" id="name" autocomplete="name" required>
+                    </label>
+                    <label for="mail">
+                        <span>Correo</span>
+                        <input type="email" name="mail" id="mail" autocomplete="email" required>
+                    </label>
+                    <label for="country">
+                        <span>Pais</span>
+                        <input type="text" name="country" id="country" autocomplete="country" required>
+                    </label>
+                    <label for="cp">
+                        <span>Código Postal</span>
+                        <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+                    </label>
+                    <input type="submit">
+                </form>
             </form>
         </section>
     </main>
