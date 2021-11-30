@@ -7,18 +7,18 @@
     <meta name="description" content="Lista de compras - super">
     <meta name="robots" content="index, follow">
     <title>Supermarket List</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>Supermarket List</h1>
+        <h1 class="titulo">Supermarket List</h1>
     </header>
-    <main>
+    <main class="color">
         <ul>
             <li>Frutas</li>
             <section>
                 <figure>
-                    <img src="./pics/fruts.jpg" alt="Descripción en caso las imagenes no carguen">
+                    <img class="frutas" src="./pics/fruts.jpg" alt="Descripción en caso las imagenes no carguen">
                     <figcaption>Frutas para obtener fibra</figcaption>
                 </figure>
             </section>
@@ -31,7 +31,7 @@
             <li>Carnes</li>
             <section>
                 <figure>
-                    <img src="./pics/meats.jpg" alt="Descripción en caso de no cargar la imagen">
+                    <img class="carnes" src="./pics/meats.jpg" alt="Descripción en caso de no cargar la imagen">
                     <figcaption>Carnes para obtener proteinas</figcaption>
                 </figure>
             </section>
@@ -44,7 +44,7 @@
             <li>Verduras</li>
             <section>
                 <figure>
-                    <img src="./pics/vegetables.jpg" alt="Descripción en caso de no cargar la imagen">
+                    <img class="verduras" src="./pics/vegetables.jpg" alt="Descripción en caso de no cargar la imagen">
                     <figcaption>Verduras para obtener variedad de vitaminas</figcaption>
                 </figure>
             </section>
@@ -54,13 +54,13 @@
             </ol>
         </ul>
         <section>
-            <video controls preload="auto">
+            <video class="videos" controls preload="auto">
                 <source src="./algoMejor.mp4#t=6,11"/>
                 <source src="./algoMejor.m4v#t=6,11"/> 
             </video>
         </section>
-        <section>3.0
-            <form action="">
+        <section>
+            <form class="formularioUno" action="">
                 <label for="Recomendaciones">
                     <span>Algo par recomendar</span>
                     <input type="text" name="" id="Recomendaciones" placeholder="Here">
@@ -71,7 +71,8 @@
                 </label>            
                 <label for="usuario">
                     <span>Nombre del usuario</span>
-                    <input type="text" name="" id="usuario" placeholder="Here">
+                    <input type="text" name="" id="usuario" placeholder="Here"> <br>
+                    <p></p>
                 </label>
             </form>
         </section>
@@ -82,6 +83,7 @@
                     <input type="datetime-local" name="calendar" id="calendar">
                 </label>
                 <input type="submit">
+                <p></p>
             </form>
         </section>
         <section>
@@ -103,6 +105,7 @@
                     <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
                 </label>
                 <input type="submit">
+                <p></p>
             </form>
         </section>
         <section>
@@ -114,6 +117,7 @@
                 <option value="Zanahorias"></option>
                 <option value="Tomates"></option>
             </datalist>
+            <p></p>
         </section>
         <section>
             <input type="submit" value="Inputcito">
