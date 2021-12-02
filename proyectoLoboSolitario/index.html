@@ -13,6 +13,15 @@
     <header>
         <h1 class="titulo">Supermarket List</h1>
     </header>
+    <nav>
+        <ul class="main-nav">
+            <li class="main-nav__item"><a href="">Frutas</a></li>
+            <li class="main-nav__item"><a href="">Carnes</a></li>
+            <li class="main-nav__item"><a href="">Verduras</a></li>
+            <li class="main-nav__item"><a href="">Recetas</a></li>
+            <li class="main-nav__item"><a href="">Formulario</a></li>
+        </ul>
+    </nav>
     <main class="color">
         <ul>
             <li>Frutas</li>
@@ -54,23 +63,27 @@
             </ol>
         </ul>
         <section>
-            <video class="videos" controls preload="auto">
-                <source src="./algoMejor.mp4#t=6,11"/>
-                <source src="./algoMejor.m4v#t=6,11"/> 
+            <h3>Receta recomendada: Frutas</h3>
+            <video class="videoUno" controls preload="auto">                
+                <source src="./recetaFrutas.mp4#t=20,100"/>                
+            </video>
+            <h3>Receta recomendada: Verduras</h3>
+            <video class="videoDos" controls preload="auto">
+                <source src="./recetaVerduras.mp4#t=40,230"/>
             </video>
         </section>
         <section>
             <form class="formularioUno" action="">
                 <label for="Recomendaciones">
-                    <span>Algo par recomendar</span>
-                    <input type="text" name="" id="Recomendaciones" placeholder="Here">
+                    <span>Recomiendame una receta :)</span><br>
+                    <input type="text" name="" id="Recomendaciones" placeholder="Here"><br>
                 </label>                        
                 <label for="Recetas">
-                    <span>Recetas para mi</span>
-                    <input type="text" name="" id="Recetas" placeholder="Here">
+                    <span>Dime tus ingredientes</span><br>
+                    <input type="text" name="" id="Recetas" placeholder="Here"><br>
                 </label>            
                 <label for="usuario">
-                    <span>Nombre del usuario</span>
+                    <span>Cúal es tu nombre?</span><br>
                     <input type="text" name="" id="usuario" placeholder="Here"> <br>
                     <p></p>
                 </label>
@@ -79,36 +92,38 @@
         <section>
             <form action="">
                 <label for="calendar">
-                    <span>Calendario rapido</span>
-                    <input type="datetime-local" name="calendar" id="calendar">
+                    <span>Receta agendada para:</span><br>
+                    <input type="datetime-local" name="calendar" id="calendar"><br>
                 </label>
                 <input type="submit">
                 <p></p>
             </form>
         </section>
         <section>
+            <h3>Datos especificos</h3>
             <form action="">
                 <label for="name">
-                    <span>Nombre</span>
-                    <input type="text" name="name" id="name" autocomplete="name" required/>
+                    <span>Nombre</span><br>
+                    <input type="text" name="name" id="name" autocomplete="name" required/><br>
                 </label>
                 <label for="email">
-                    <span>Correo</span>
-                    <input type="email" name="email" id="email" autocomplete="email" required>
+                    <span>Correo</span><br>
+                    <input type="email" name="email" id="email" autocomplete="email" required><br>
                 </label>
                 <label for="country">
-                    <span>Pais</span>
-                    <input type="text" name="country" id="country" autocomplete="country" required>
+                    <span>Pais</span><br>
+                    <input type="text" name="country" id="country" autocomplete="country" required><br>
                 </label>
                 <label for="cp">
-                    <span>Código Postal</span>
-                    <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+                    <span>Código Postal</span><br>
+                    <input type="text" name="cp" id="cp" autocomplete="postal-code" required><br>
                 </label>
                 <input type="submit">
                 <p></p>
             </form>
         </section>
         <section>
+            <h3>Elige tu favorito</h3>
             <input list="compras">
             <datalist id="compras">
                 <option value="Manzanas"></option>

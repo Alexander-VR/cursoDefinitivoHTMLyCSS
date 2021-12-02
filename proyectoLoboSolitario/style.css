@@ -1,9 +1,40 @@
 .titulo {
-    color: yellow;
+    color: palevioletred;
 }
 
 .color {
     background-color: palevioletred;
+}
+
+.main-nav {    
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;    
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 3px;
+}
+
+/*Pseudo Clase*/
+.main-nav__item a:hover {
+    color: black;
+}
+.main-nav__item a:active {
+    color: crimson;    
+}
+
+/*Pseudo Elemento*/
+.main-nav__item a::after {
+    content: " ❤️";
 }
 
 .frutas {
@@ -18,8 +49,12 @@
     width: 10%;
 }
 
-.videos {
-    width: 10%;
+.videoUno {
+    width: 30%;
+}
+
+.videoDos {
+    width: 30%;
 }
 
 .formularioUno {
