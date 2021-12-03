@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+html {
+    font-size: 110%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-size: inherit;
+}
 
 .titulo {
     color: palevioletred;
