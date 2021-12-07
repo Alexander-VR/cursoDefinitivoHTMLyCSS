@@ -1,3 +1,13 @@
+/*
+Hermano Adyacente o Cercano (Adjacent sibling)
+*/
 h2 + p {
     color: red;
+}
+
+/*
+Hermano general (General sibling)
+*/
+h2 ~ p {
+    color: aqua
 }
