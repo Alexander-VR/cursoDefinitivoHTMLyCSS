@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="header-title">
         <h1 class="titulo">Supermarket List</h1>
     </header>
     <nav>
@@ -22,86 +22,81 @@
             <li class="main-nav__item"><a href="">Formulario</a></li>
         </ul>
     </nav>
-    <main class="color">
-        <ul>
-            <li>Frutas</li>
+    <main class="main-list">
+        <ul class="unordered-list_frutas">
+            <h2>Frutas</h2>
             <section>
                 <figure>
                     <img class="frutas" src="./pics/fruts.jpg" alt="Descripción en caso las imagenes no carguen">
-                    <figcaption>Frutas para obtener fibra</figcaption>
+                    <figcaption>Obtención de fibra</figcaption><br>
                 </figure>
             </section>
-            <ol>
-                <li>Manzana</li>
-                <li>Platano</li>                
-            </ol>
+            <ol>Manzana</ol>
+            <ol>Platano</ol>    
         </ul>
-        <ul>
-            <li>Carnes</li>
+        <ul class="unordered-list_carnes">
+            <h2>Carnes</h2>
             <section>
                 <figure>
                     <img class="carnes" src="./pics/meats.jpg" alt="Descripción en caso de no cargar la imagen">
-                    <figcaption>Carnes para obtener proteinas</figcaption>
+                    <figcaption>Obtención de proteinas</figcaption><br>
                 </figure>
-            </section>
-            <ol>
-                <li>Pollo</li>
-                <li>Carne Molida</li>
-            </ol>
+            </section>            
+            <ol>Pollo</ol>
+            <ol>Carne Molida</ol>            
         </ul>
-        <ul>
-            <li>Verduras</li>
+        <ul class="unordered-list_verduras">
+            <h2>Verduras</h2>
             <section>
                 <figure>
                     <img class="verduras" src="./pics/vegetables.jpg" alt="Descripción en caso de no cargar la imagen">
-                    <figcaption>Verduras para obtener variedad de vitaminas</figcaption>
+                    <figcaption>Obtenención variedad de vitaminas</figcaption><br>
                 </figure>
             </section>
-            <ol>
-                <li>Limón</li>
-                <li><a href="https://www.youtube.com/watch?v=orHkDYNFwEg&list=RDGenMRomnI8c&index=4" target="_blank">Zanahoria</a></li>
+            <ol>Limón</ol>            
+            <ol>                
+                <a href="https://www.youtube.com/watch?v=orHkDYNFwEg&list=RDGenMRomnI8c&index=4" target="_blank">Zanahoria</a>
             </ol>
-        </ul>
-        <section>
-            <h3>Receta recomendada: Frutas</h3>
+        </ul>        
+    </main>
+    <main class="main-recipes">
+        <h2>Recetas Recomendadas</h2>
+        <section class="section-video_frutas">
+            <h3>Con Frutas 🍐🍓🍇</h3>
             <video class="videoUno" controls preload="auto">                
                 <source src="./videos/recetaFrutas.mp4#t=20,100"/>                
             </video>
-            <h3>Receta recomendada: Verduras</h3>
+        </section>
+        <section class="section-video_verduras">
+            <h3>Con Verduras 🥬🥕🥦</h3>
             <video class="videoDos" controls preload="auto">
                 <source src="./videos/recetaVerduras.mp4#t=40,230"/>
             </video>
-        </section>
+        </section>        
+    </main>
+    <main class="main-forms">
         <section>
-            <form class="formularioUno" action="">
+            <h2>Recomiendame una receta </h2>
+            <form class="form-recomendaciones" action="">
                 <label for="Recomendaciones">
-                    <span>Recomiendame una receta :)</span><br>
+                    <span>Nombre de la receta:</span>
                     <input type="text" name="" id="Recomendaciones" placeholder="Here"><br>
-                </label>                        
+                </label>                    
                 <label for="Recetas">
-                    <span>Dime tus ingredientes</span><br>
+                    <span>Ingredientes:</span><br>
                     <input type="text" name="" id="Recetas" placeholder="Here"><br>
-                </label>            
-                <label for="usuario">
-                    <span>Cúal es tu nombre?</span><br>
-                    <input type="text" name="" id="usuario" placeholder="Here"> <br>
-                    <p></p>
-                </label>
-            </form>
-        </section>
-        <section>
-            <form action="">
+                </label>                        
                 <label for="calendar">
-                    <span>Receta agendada para:</span><br>
+                    <span>Receta agendada el día:</span><br>
                     <input type="datetime-local" name="calendar" id="calendar"><br>
                 </label>
                 <input type="submit">
                 <p></p>
             </form>
-        </section>
+        </section><br>
         <section>
-            <h3>Datos especificos</h3>
-            <form action="">
+            <h3>A quién agradezco la comida?</h3>
+            <form class="form-datosUsuario" action="">
                 <label for="name">
                     <span>Nombre</span><br>
                     <input type="text" name="name" id="name" autocomplete="name" required/><br>
@@ -121,7 +116,7 @@
                 <input type="submit">
                 <p></p>
             </form>
-        </section>
+        </section><br>
         <section>
             <h3>Elige tu favorito</h3>
             <input list="compras">
@@ -139,7 +134,6 @@
             <button type="submit">Buttoncito</button>
         </section>
     </main>
-
     <footer>
         <p>Creado con amor 💚</p>
     </footer>

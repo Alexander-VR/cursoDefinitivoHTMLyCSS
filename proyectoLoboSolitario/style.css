@@ -3,46 +3,61 @@
     padding: 0;
     margin: 0;
 }
-
 html {
     font-size: 110%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 h3 {
     font-size: inherit;
 }
-
+body {
+    background-color: black;
+}
+.header-title {
+    text-align: center;
+    background-color: aqua;
+    width: 60%;
+    border-radius: 6px;
+    margin: 15px auto;
+    position: relative;       
+}
 .titulo {
     color: palevioletred;
 }
-
-.color {
-    background-color: palevioletred;
-}
 main {
-    width: 100%;
+    width: 60%;
     height: 100%;
     border: 10px solid gray;
     padding: 20px 35px;
 }
-
 .main-nav {    
     list-style: none;
-    padding-left: 0;
-    margin-top: 10px;    
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: crimson;
+    text-align: center;
+    height: 10vh;
+    width: 80%;
 }
-
 .main-nav__item {
     display: inline-block;
+    position: relative;
+    top: 25px;
 }
-
 .main-nav__item a {
     text-decoration: none;
     color: white;
     padding: 5px;
     background-color: aqua;
     border-radius: 3px;
+}
+.main-list {
+    background-color: palevioletred;
+    margin: auto;
+    /*padding: 0;*/
+    position: relative;
+    width: 80%;
 }
 
 /*Pseudo Clase*/
@@ -58,26 +73,85 @@ main {
     content: " ❤️";
 }
 
-.frutas {
-    width:10%;
+/*Sección imagenes*/
+.unordered-list_frutas {
+    background-color: aqua;
+    text-align: center;
+    list-style: none;
+    width: 60%;
+    margin: auto;        
+}
+.unordered-list_carnes {
+    background-color: crimson;
+    text-align: center;
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+.unordered-list_verduras {
+    background-color: #F4D03F;
+    text-align: center;
+    list-style: none;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+.main-list img {
+    width: 45%;
 }
 
-.carnes {
-    width: 10%;
+/*Zona videos*/
+.main-recipes {
+    background-color: black;
+    color: yellow;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;    
 }
-
-.verduras {
-    width: 10%;
+.section-video_frutas {
+    background-color: aqua;
+    color: black;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    height: 350px;
 }
-
-.videoUno {
-    width: 30%;
+.section-video_verduras {
+    background-color: crimson;
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 350px;
+}
+.videoUno {    
+    width: 65%;
+    padding-top: 5px;
 }
 
 .videoDos {
-    width: 30%;
+    width: 65%;
+    padding-top: 5px;
 }
 
-.formularioUno {
-    color: yellow;
+/*Zona Formullarios*/
+.main-forms {
+    background-color: yellow;
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+}
+.main-forms h2 {
+    text-align: center;
+}
+
+.form-recomendaciones {
+    background-color: aqua;
+    color: black;
+}
+.form-datosUsuario {
+    background-color: aqua;
 }
