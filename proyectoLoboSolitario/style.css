@@ -155,3 +155,8 @@ main {
 .form-datosUsuario {
     background-color: aqua;
 }
+
+/*Footer*/
+footer p {
+    color: white;
+}
