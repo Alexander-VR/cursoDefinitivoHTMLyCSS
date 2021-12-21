@@ -4,25 +4,25 @@
     margin: 0;
 }
 html {
-    font-size: 110%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h3 {
-    font-size: inherit;
+    font-size: 62.5%;    
 }
 body {
+    font-family: 'Dancing Script', cursive;
     background-color: black;
 }
 .header-title {
-    text-align: center;
-    background-color: aqua;
-    width: 60%;
-    border-radius: 6px;
-    margin: 15px auto;
-    position: relative;       
+    display: flex;
+    flex-direction: wrap;
+    background-color: #F4D03F;  
 }
 .titulo {
+    background-color: aqua;
+    width: 100%;
+    min-width: 150px;
+    height: 30px;
+    text-align: center;
     color: palevioletred;
+    border-radius: 6px;
 }
 main {
     width: 60%;
