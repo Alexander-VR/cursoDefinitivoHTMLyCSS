@@ -3,11 +3,8 @@
     margin-left: auto;
     margin-right: auto;
 }
-.c1 {
-    width: 60%;
-}
-.c2 {
-    width: 40%;
+.c1, .c2 {
+    width: 50%;
 }
 .c3, .c4 {
     width: 33%;
